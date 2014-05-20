@@ -1,0 +1,90 @@
+\hypertarget{class_race_tray_1_1_scene}{\section{Race\-Tray\-:\-:Scene Class Reference}
+\label{class_race_tray_1_1_scene}\index{Race\-Tray\-::\-Scene@{Race\-Tray\-::\-Scene}}
+}
+
+
+{\ttfamily \#include $<$R\-T\-Scene.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_race_tray_1_1_scene_ab0b893217e6108982c963586a3eed7a1}{Scene} ()
+\item 
+\hyperlink{class_race_tray_1_1_scene_a64dbc6679f6543c06229efc87725532b}{Scene} (const \hyperlink{class_race_tray_1_1_scene}{Scene} \&other)
+\item 
+\hyperlink{class_race_tray_1_1_scene_af7c0fb4d0f3d4a10b50fb340376eed21}{$\sim$\-Scene} ()
+\item 
+bool \hyperlink{class_race_tray_1_1_scene_a6c01bc164fe3188f9de317b5176bcd18}{initialize} ()
+\item 
+void \hyperlink{class_race_tray_1_1_scene_abf3e9e56a8d5af553d0805fbdc807aeb}{destroy} ()
+\item 
+bool \hyperlink{class_race_tray_1_1_scene_a50293de9c949fbf279549d6618aa7dfb}{play} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A scene is the overarching container for all data within the Race\-Tray ray tracer. The scene the scene graph, physics world, animation sequences, the render pipeline, and the application configuration. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_race_tray_1_1_scene_ab0b893217e6108982c963586a3eed7a1}{\index{Race\-Tray\-::\-Scene@{Race\-Tray\-::\-Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!RaceTray::Scene@{Race\-Tray\-::\-Scene}}
+\subsubsection[{Scene}]{\setlength{\rightskip}{0pt plus 5cm}Race\-Tray\-::\-Scene\-::\-Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_scene_ab0b893217e6108982c963586a3eed7a1}
+Default constructor \hypertarget{class_race_tray_1_1_scene_a64dbc6679f6543c06229efc87725532b}{\index{Race\-Tray\-::\-Scene@{Race\-Tray\-::\-Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!RaceTray::Scene@{Race\-Tray\-::\-Scene}}
+\subsubsection[{Scene}]{\setlength{\rightskip}{0pt plus 5cm}Race\-Tray\-::\-Scene\-::\-Scene (
+\begin{DoxyParamCaption}
+\item[{const {\bf Scene} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_scene_a64dbc6679f6543c06229efc87725532b}
+Copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_race_tray_1_1_scene}{Scene}\& The scene to copy \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_race_tray_1_1_scene_af7c0fb4d0f3d4a10b50fb340376eed21}{\index{Race\-Tray\-::\-Scene@{Race\-Tray\-::\-Scene}!$\sim$\-Scene@{$\sim$\-Scene}}
+\index{$\sim$\-Scene@{$\sim$\-Scene}!RaceTray::Scene@{Race\-Tray\-::\-Scene}}
+\subsubsection[{$\sim$\-Scene}]{\setlength{\rightskip}{0pt plus 5cm}Race\-Tray\-::\-Scene\-::$\sim$\-Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_scene_af7c0fb4d0f3d4a10b50fb340376eed21}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_race_tray_1_1_scene_abf3e9e56a8d5af553d0805fbdc807aeb}{\index{Race\-Tray\-::\-Scene@{Race\-Tray\-::\-Scene}!destroy@{destroy}}
+\index{destroy@{destroy}!RaceTray::Scene@{Race\-Tray\-::\-Scene}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}void Race\-Tray\-::\-Scene\-::destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_scene_abf3e9e56a8d5af553d0805fbdc807aeb}
+Destroy the scene and free all resources used. \hypertarget{class_race_tray_1_1_scene_a6c01bc164fe3188f9de317b5176bcd18}{\index{Race\-Tray\-::\-Scene@{Race\-Tray\-::\-Scene}!initialize@{initialize}}
+\index{initialize@{initialize}!RaceTray::Scene@{Race\-Tray\-::\-Scene}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Race\-Tray\-::\-Scene\-::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_scene_a6c01bc164fe3188f9de317b5176bcd18}
+Initialize the scene. This takes care of reading in any configuration files specified and preparing the scene to be played. \begin{DoxyReturn}{Returns}
+bool Returns true if the scene was initialized successfully 
+\end{DoxyReturn}
+\hypertarget{class_race_tray_1_1_scene_a50293de9c949fbf279549d6618aa7dfb}{\index{Race\-Tray\-::\-Scene@{Race\-Tray\-::\-Scene}!play@{play}}
+\index{play@{play}!RaceTray::Scene@{Race\-Tray\-::\-Scene}}
+\subsubsection[{play}]{\setlength{\rightskip}{0pt plus 5cm}bool Race\-Tray\-::\-Scene\-::play (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_scene_a50293de9c949fbf279549d6618aa7dfb}
+Play the scene \begin{DoxyReturn}{Returns}
+bool Returns true if the scene was played successfully 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Gael/\-Documents/\-Race\-Tray/\-Scene/R\-T\-Scene.\-h\item 
+C\-:/\-Users/\-Gael/\-Documents/\-Race\-Tray/\-Scene/R\-T\-Scene.\-cpp\end{DoxyCompactItemize}
