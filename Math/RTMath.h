@@ -11,7 +11,7 @@
 
 // Class definition includes
 #include "RTMathPrerequisites.h"
-//#include "RTColor.h"
+#include "RTColor.h"
 //#include "RTColor32.h"
 //#include "RTMatrix33.h"
 #include "RTMatrix44.h"
@@ -20,6 +20,7 @@
 //#include "RTPyramid.h"
 #include "RTRay.h"
 //#include "RTSphere.h"
+#include "RTVector2.h"
 #include "RTVector3.h"
 //#include "RTVector4.h"
 
@@ -33,6 +34,36 @@ namespace RaceTray
     //**************************************
     // Typedefs for standard class types
     //**************************************
+    /**
+    * Color composed of floats
+    */
+    typedef Color<float> Colorf;
+
+    /**
+    * Color composed of doubles
+    */
+    typedef Color<double> Colord;
+
+    /**
+    * Ray composed of floats
+    */
+    typedef Ray<float> Rayf;
+
+    /**
+    * Vector2 of floats
+    */
+    typedef Vector2<float> Vector2f;
+
+    /**
+    * Vector2 of doubles
+    */
+    typedef Vector2<double> Vector2d;
+
+    /**
+    * Vector2 of ints
+    */
+    typedef Vector2<int> Vector2i;
+
     /**
     * Vector3 of floats
     */
@@ -53,10 +84,7 @@ namespace RaceTray
     */
     typedef Vector3<long> Vector3l;
 
-    /**
-    * Ray composed of floats
-    */
-    typedef Ray<float> Rayf;
+
 
     //***********************
     // Math constants

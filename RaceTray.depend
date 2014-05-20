@@ -1,13 +1,16 @@
 # depslib dependency file v1.0
-1400559488 source:c:\users\gael\documents\racetray\core\main.cpp
+1400560182 source:c:\users\gael\documents\racetray\core\main.cpp
 	"Scene/RTScene.h"
+	<iostream>
 
-1400468225 c:\users\gael\documents\racetray\\math\rtmath.h
+1400562674 c:\users\gael\documents\racetray\\math\rtmath.h
 	<assert.h>
 	<math.h>
 	"RTMathPrerequisites.h"
+	"RTColor.h"
 	"RTMatrix44.h"
 	"RTRay.h"
+	"RTVector2.h"
 	"RTVector3.h"
 
 1400559087 c:\users\gael\documents\racetray\\math\rtvector3.h
@@ -25,10 +28,12 @@
 
 1400043602 c:\users\gael\documents\racetray\\math\rtmatrix44.inl
 
-1400464683 c:\users\gael\documents\racetray\\math\rtmathprerequisites.h
+1400562552 c:\users\gael\documents\racetray\\math\rtmathprerequisites.h
 
-1400559709 c:\users\gael\documents\racetray\\scene\rtscene.h
+1400562707 c:\users\gael\documents\racetray\\scene\rtscene.h
+	<vector>
 	"Math/RTMath.h"
+	"RTRenderer.h"
 
 1400468721 c:\users\gael\documents\racetray\\math\rtray.h
 	"RTMath.h"
@@ -36,9 +41,40 @@
 
 1400468415 c:\users\gael\documents\racetray\\math\rtray.inl
 
-1400559797 source:c:\users\gael\documents\racetray\scene\rtscene.cpp
+1400561765 source:c:\users\gael\documents\racetray\scene\rtscene.cpp
 	"RTScene.h"
 
-1400559709 c:\users\gael\documents\racetray\scene\rtscene.h
+1400562707 c:\users\gael\documents\racetray\scene\rtscene.h
+	<vector>
 	"Math/RTMath.h"
+	"RTRenderer.h"
+
+1400599474 c:\users\gael\documents\racetray\\scene\rtrenderer.h
+	<vector>
+	"Math/RTMath.h"
+	"Scene/RTSceneGraph.h"
+	"Scene/RTLight.h"
+	"Scene/RTCamera.h"
+
+1400598549 c:\users\gael\documents\racetray\\math\rtcolor.h
+	"RTMath.h"
+	"RTColor.inl"
+
+1400598586 c:\users\gael\documents\racetray\\math\rtcolor.inl
+
+1400598733 c:\users\gael\documents\racetray\\math\rtvector2.h
+	"RTMath.h"
+
+1400599474 c:\users\gael\documents\racetray\scene\rtrenderer.h
+	<vector>
+	"Math/RTMath.h"
+	"Scene/RTSceneGraph.h"
+	"Scene/RTLight.h"
+	"Scene/RTCamera.h"
+
+1400599361 c:\users\gael\documents\racetray\\scene\rtscenegraph.h
+
+1400599460 c:\users\gael\documents\racetray\\scene\rtlight.h
+
+1400599506 c:\users\gael\documents\racetray\\scene\rtcamera.h
 

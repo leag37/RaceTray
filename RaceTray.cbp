@@ -63,14 +63,25 @@
 		<Unit filename="Core/Main.cpp">
 			<Option virtualFolder="Core/" />
 		</Unit>
+		<Unit filename="Math/RTColor.h">
+			<Option virtualFolder="Math/" />
+		</Unit>
 		<Unit filename="Math/RTMath.h">
 			<Option virtualFolder="Math/" />
 		</Unit>
-		<Unit filename="Math/RTMathPrerequisites.h" />
+		<Unit filename="Math/RTMathPrerequisites.h">
+			<Option virtualFolder="Math/" />
+		</Unit>
 		<Unit filename="Math/RTMatrix44.h">
 			<Option virtualFolder="Math/" />
 		</Unit>
 		<Unit filename="Math/RTMatrix44.inl">
+			<Option virtualFolder="Math/" />
+		</Unit>
+		<Unit filename="Math/RTRay.h">
+			<Option virtualFolder="Math/" />
+		</Unit>
+		<Unit filename="Math/RTRay.inl">
 			<Option virtualFolder="Math/" />
 		</Unit>
 		<Unit filename="Math/RTVector3.h">
@@ -78,6 +89,15 @@
 		</Unit>
 		<Unit filename="Math/RTVector3.inl">
 			<Option virtualFolder="Math/" />
+		</Unit>
+		<Unit filename="Scene/RTRenderer.h">
+			<Option virtualFolder="Scene/" />
+		</Unit>
+		<Unit filename="Scene/RTScene.cpp">
+			<Option virtualFolder="Scene/" />
+		</Unit>
+		<Unit filename="Scene/RTScene.h">
+			<Option virtualFolder="Scene/" />
 		</Unit>
 		<Extensions>
 			<code_completion />

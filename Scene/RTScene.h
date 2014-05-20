@@ -4,10 +4,18 @@
 #ifndef __RTSCENE_H__
 #define __RTSCENE_H__
 
+#include <vector>
+
 #include "Math/RTMath.h"
+
+#include "RTRenderer.h"
 
 namespace RaceTray
 {
+    /** \addtogroup Scene
+    *   @{
+    */
+
     /**
     * A scene is the overarching container for all data within the RaceTray ray tracer. The scene
     * the scene graph, physics world, animation sequences, the render pipeline, and the
@@ -54,8 +62,33 @@ namespace RaceTray
         bool play();
 
     private:
+        /**
+        * Scene graph
+        */
+        //SceneGraph* _sceneGraph;
 
+        /**
+        * Physical world
+        */
+        //PhysicsWorld* _physicsWorld;
+
+        /**
+        * Renderer
+        */
+        //Renderer* _renderer;
+
+        /**
+        * Camera
+        */
+        //Camera* _camera;
+
+        /**
+        * Light list
+        */
+        //std::vector<Light*> _lights;
     };
+
+    /** @} */
 
 }   // Namespace
 

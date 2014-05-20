@@ -7,10 +7,16 @@
 namespace RaceTray
 {
     template <typename Unit>
+    class Color;
+
+    template <typename Unit>
     class Matrix44;
 
     template <typename Unit>
     class Ray;
+
+    template <typename Unit>
+    class Vector2;
 
     template <typename Unit>
     class Vector3;
