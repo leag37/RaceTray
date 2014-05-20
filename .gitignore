@@ -1,0 +1,6 @@
+# Build files
+*.o
+*.exe
+
+# Run files
+*.gout

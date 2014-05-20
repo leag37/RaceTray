@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="RaceTray" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="Core\;Math\;Geometry\;Effects\;Scene\;IO\;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/RaceTray" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="C:/Users/Gael/Documents/RaceTray/" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/RaceTray" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Debug_Profile">
+				<Option output="bin/Debug/RaceTray" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add directory="C:/Users/Gael/Documents/RaceTray/" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg -lgmon" />
+				</Linker>
+			</Target>
+			<Target title="Release_Profile">
+				<Option output="bin/Release/RaceTray" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-pg" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg -lgmon" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Core/Main.cpp">
+			<Option virtualFolder="Core/" />
+		</Unit>
+		<Unit filename="Math/RTMath.h">
+			<Option virtualFolder="Math/" />
+		</Unit>
+		<Unit filename="Math/RTMathPrerequisites.h" />
+		<Unit filename="Math/RTMatrix44.h">
+			<Option virtualFolder="Math/" />
+		</Unit>
+		<Unit filename="Math/RTMatrix44.inl">
+			<Option virtualFolder="Math/" />
+		</Unit>
+		<Unit filename="Math/RTVector3.h">
+			<Option virtualFolder="Math/" />
+		</Unit>
+		<Unit filename="Math/RTVector3.inl">
+			<Option virtualFolder="Math/" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

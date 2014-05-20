@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1400559488 source:c:\users\gael\documents\racetray\core\main.cpp
+	"Scene/RTScene.h"
+
+1400468225 c:\users\gael\documents\racetray\\math\rtmath.h
+	<assert.h>
+	<math.h>
+	"RTMathPrerequisites.h"
+	"RTMatrix44.h"
+	"RTRay.h"
+	"RTVector3.h"
+
+1400559087 c:\users\gael\documents\racetray\\math\rtvector3.h
+	"RTMath.h"
+	"RTVector3.inl"
+
+1400031069 source:c:\users\gael\documents\racetray\math\rtvector3.cpp
+	"Math/RTVector3.h"
+
+1400559094 c:\users\gael\documents\racetray\\math\rtvector3.inl
+
+1400126378 c:\users\gael\documents\racetray\\math\rtmatrix44.h
+	"RTMath.h"
+	"RTMatrix44.inl"
+
+1400043602 c:\users\gael\documents\racetray\\math\rtmatrix44.inl
+
+1400464683 c:\users\gael\documents\racetray\\math\rtmathprerequisites.h
+
+1400559709 c:\users\gael\documents\racetray\\scene\rtscene.h
+	"Math/RTMath.h"
+
+1400468721 c:\users\gael\documents\racetray\\math\rtray.h
+	"RTMath.h"
+	"RTRay.inl"
+
+1400468415 c:\users\gael\documents\racetray\\math\rtray.inl
+
+1400559797 source:c:\users\gael\documents\racetray\scene\rtscene.cpp
+	"RTScene.h"
+
+1400559709 c:\users\gael\documents\racetray\scene\rtscene.h
+	"Math/RTMath.h"
+
