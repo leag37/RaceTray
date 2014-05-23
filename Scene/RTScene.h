@@ -65,7 +65,7 @@ namespace RaceTray
         /**
         * Scene graph
         */
-        //SceneGraph* _sceneGraph;
+        SceneGraph* _sceneGraph;
 
         /**
         * Physical world
@@ -75,17 +75,17 @@ namespace RaceTray
         /**
         * Renderer
         */
-        //Renderer* _renderer;
+        Renderer* _renderer;
 
         /**
         * Camera
         */
-        //Camera* _camera;
+        Camera* _camera;
 
         /**
         * Light list
         */
-        //std::vector<Light*> _lights;
+        std::vector<Light*> _lights;
     };
 
     /** @} */

@@ -36,6 +36,8 @@ namespace RaceTray
 
         /**
         * Initialize the renderer, including the output buffer
+        * @return
+        *   bool Return true if the initialization succeeded
         */
         bool initialize();
 

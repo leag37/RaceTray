@@ -41,6 +41,18 @@ namespace RaceTray
     bool Scene::initialize()
     {
         // TODO
+
+        // Initialize the renderer
+
+        // Initialize scene graph, world, etc.
+
+        // Create a scene builder and invoke it to build the scene
+        /*
+        SceneBuilder* sceneBuilder = new SceneBuilder();
+        bool result = sceneBuilder->buildScene(this);
+        delete sceneBuilder;
+        return result;
+        */
         return true;
     }
 
@@ -59,6 +71,10 @@ namespace RaceTray
     */
     bool Scene::play()
     {
+        /*
+        Update physics tick
+        renderer->render(sceneGraph, _lights, camera);
+        */
         return true;
     }
 
