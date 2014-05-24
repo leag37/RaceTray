@@ -6,9 +6,11 @@
 
 #include <vector>
 
+#include "Geometry/RTObject.h"
 #include "Math/RTMath.h"
 #include "Scene/RTSceneGraph.h"
 #include "Scene/RTLight.h"
+#include "Scene/RTLightPair.h"
 #include "Scene/RTCamera.h"
 
 namespace RaceTray
@@ -58,6 +60,56 @@ namespace RaceTray
         bool render(const SceneGraph* sceneGraph, const std::vector<Light*>& lights, const Camera& camera);
 
     private:
+        /**
+        * Trace the primary ray through the scene and output the color given by the ray. The primary
+        * ray originates at the camera.
+        * @param
+        *   const Rayf& The ray being traced through the scene from the camera
+        * @param
+        *   const SceneGraph* The SceneGraph instance against which to render
+        * @param
+        *   const vector<Light*>& The vector holding all the light data in the scene
+        * @return
+        *   Colorf The final color from the ray
+        */
+        Colorf tracePrimaryRay(const Rayf& ray, const SceneGraph* sceneGraph, const std::vector<Light*>& lights);
+
+        /**
+        * Trace a shadow ray through the scene and output the color given by the ray. The shadow
+        * ray originates at the contact point on the receiving object and goes towards the source
+        * light.
+        * @param
+        *   const LightPair& The pairing of the receiving object and the source light
+        * @param
+        *   const Rayf& The ray being traced through the scene from the camera
+        * @param
+        *   const SceneGraph* The SceneGraph instance against which to render
+        * @param
+        *   const vector<Light*>& The vector holding all the light data in the scene
+        * @param
+        *   int recursiveIndex The current recursive index
+        * @return
+        *   Colorf The final color from the ray
+        */
+        Colorf traceShadowRay(const LightPair& lightPair, const Rayf& ray, const SceneGraph* sceneGraph, const std::vector<Light*>& lights, int recursiveIndex);
+
+        /**
+        * Trace a reflection ray through the scene and output the color given by the ray. The reflection
+        * ray's output is determined by the material component of the receiving object
+        * @param
+        *   const Object* The receiving object of the reflection
+        * @param
+        *   const Rayf& The ray being traced through the scene from the camera
+        * @param
+        *   const SceneGraph* The SceneGraph instance against which to render
+        * @param
+        *   const vector<Light*>& The vector holding all the light data in the scene
+        * @param
+        *   int recursiveIndex The current recursive index
+        * @return
+        *   Colorf The final color from the ray
+        */
+        Colorf traceReflectionRay(const Object* object, const Rayf& ray, const SceneGraph* sceneGraph, const std::vector<Light*>& lights, int recursiveIndex);
 
     };
 

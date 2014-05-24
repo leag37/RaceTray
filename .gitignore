@@ -1,6 +1,6 @@
 # Build files
-*.o
-*.exe
+obj/*
+bin/*
 
 # Run files
 *.gout

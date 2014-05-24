@@ -24,6 +24,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="C:/Users/Gael/Documents/RaceTray/" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -44,13 +45,14 @@
 				</Linker>
 			</Target>
 			<Target title="Release_Profile">
-				<Option output="bin/Release/RaceTray" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
+				<Option output="bin/Release_Profile/RaceTray" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release_Profile/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
 					<Add option="-pg" />
+					<Add directory="C:/Users/Gael/Documents/RaceTray/" />
 				</Compiler>
 				<Linker>
 					<Add option="-pg -lgmon" />
@@ -59,11 +61,18 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="C:/Users/Gael/Documents/RaceTray/" />
 		</Compiler>
 		<Unit filename="Core/Main.cpp">
 			<Option virtualFolder="Core/" />
 		</Unit>
+		<Unit filename="Geometry/RTObject.h">
+			<Option virtualFolder="Geometry/" />
+		</Unit>
 		<Unit filename="Math/RTColor.h">
+			<Option virtualFolder="Math/" />
+		</Unit>
+		<Unit filename="Math/RTColor.inl">
 			<Option virtualFolder="Math/" />
 		</Unit>
 		<Unit filename="Math/RTMath.h">
@@ -84,11 +93,29 @@
 		<Unit filename="Math/RTRay.inl">
 			<Option virtualFolder="Math/" />
 		</Unit>
+		<Unit filename="Math/RTVector2.h">
+			<Option virtualFolder="Math/" />
+		</Unit>
 		<Unit filename="Math/RTVector3.h">
 			<Option virtualFolder="Math/" />
 		</Unit>
 		<Unit filename="Math/RTVector3.inl">
 			<Option virtualFolder="Math/" />
+		</Unit>
+		<Unit filename="Scene/RTCamera.h">
+			<Option virtualFolder="Scene/" />
+		</Unit>
+		<Unit filename="Scene/RTLight.h">
+			<Option virtualFolder="Scene/" />
+		</Unit>
+		<Unit filename="Scene/RTLightPair.h">
+			<Option virtualFolder="Scene/" />
+		</Unit>
+		<Unit filename="Scene/RTRenderTarget.h">
+			<Option virtualFolder="Scene/" />
+		</Unit>
+		<Unit filename="Scene/RTRenderer.cpp">
+			<Option virtualFolder="Scene/" />
 		</Unit>
 		<Unit filename="Scene/RTRenderer.h">
 			<Option virtualFolder="Scene/" />
@@ -97,6 +124,15 @@
 			<Option virtualFolder="Scene/" />
 		</Unit>
 		<Unit filename="Scene/RTScene.h">
+			<Option virtualFolder="Scene/" />
+		</Unit>
+		<Unit filename="Scene/RTSceneBuilder.h">
+			<Option virtualFolder="Scene/" />
+		</Unit>
+		<Unit filename="Scene/RTSceneCollisionData.h">
+			<Option virtualFolder="Scene/" />
+		</Unit>
+		<Unit filename="Scene/RTSceneGraph.h">
 			<Option virtualFolder="Scene/" />
 		</Unit>
 		<Extensions>
