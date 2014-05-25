@@ -1,5 +1,30 @@
 var group___math =
 [
+    [ "Color", "class_race_tray_1_1_color.html", [
+      [ "Color", "group___math.html#ga9a742cbe9f9f4037f5d9f4e81a9b2428", null ],
+      [ "Color", "group___math.html#gad9c19651c0feb39d14efb0bf957c9cf9", null ],
+      [ "Color", "group___math.html#ga866f5b3f4192cdd953900b3bdae4b2cd", null ],
+      [ "~Color", "group___math.html#ga3cfce6c6821d3bf489e26074c55378c0", null ],
+      [ "add", "class_race_tray_1_1_color.html#abdab4e4920642970217635ba97cdfefc", null ],
+      [ "clamp", "class_race_tray_1_1_color.html#ae106d58f45c7d70d96eeb190262f78b6", null ],
+      [ "clamped", "class_race_tray_1_1_color.html#ab789ee21b42357d9c29a858b8a310948", null ],
+      [ "difference", "class_race_tray_1_1_color.html#a9c37343537eb86200e83086a06a15df6", null ],
+      [ "getAlpha", "class_race_tray_1_1_color.html#a72a884a0a1a2fe2e406ff2ab012360f5", null ],
+      [ "getBlue", "class_race_tray_1_1_color.html#a2fdec11353b58a1b5e59bb87594206dd", null ],
+      [ "getGreen", "class_race_tray_1_1_color.html#a73be96b524d361182fdef4aaaca34f9b", null ],
+      [ "getRed", "class_race_tray_1_1_color.html#ab8e031b4a93a561509213d92d026dbbe", null ],
+      [ "operator+", "class_race_tray_1_1_color.html#aa82e66afb467bab0074be4e82362a9fe", null ],
+      [ "operator+=", "class_race_tray_1_1_color.html#ac5abb56ea0b51d2df819e873b8539399", null ],
+      [ "operator-", "class_race_tray_1_1_color.html#ae56d582340b54a63a957c5bc1b11e72a", null ],
+      [ "operator-=", "class_race_tray_1_1_color.html#a625f389f8990d6b9c72fcf4f015f246b", null ],
+      [ "operator=", "group___math.html#ga495cb1736fef1e5306e572365203ff42", null ],
+      [ "setAlpha", "class_race_tray_1_1_color.html#ad1959b679e3e7c3bd88e078d98c4e8ae", null ],
+      [ "setBlue", "class_race_tray_1_1_color.html#a0033768eb09b5cd90a780b34830ac577", null ],
+      [ "setGreen", "class_race_tray_1_1_color.html#a1ad38db0398efaea9737c56f55d14030", null ],
+      [ "setRed", "class_race_tray_1_1_color.html#a07407c9dc5450e4d3edd11ca8fc0a5d6", null ],
+      [ "sub", "class_race_tray_1_1_color.html#aa48224a163f209e4cc14d469dd2bb409", null ],
+      [ "sum", "class_race_tray_1_1_color.html#a807c15bcd88c175dc296e5755e218201", null ]
+    ] ],
     [ "Matrix44", "class_race_tray_1_1_matrix44.html", null ],
     [ "Ray", "class_race_tray_1_1_ray.html", [
       [ "Ray", "group___math.html#ga2e3d2c29f2df4ab3da10da79d4acb852", null ],
@@ -9,6 +34,7 @@ var group___math =
       [ "getDirection", "group___math.html#gaab0b0ed57af0899286c2996dfdc9418b", null ],
       [ "getOrigin", "group___math.html#gab1690c909fff67ff5c878aa6f05bfe2b", null ]
     ] ],
+    [ "Vector2", "class_race_tray_1_1_vector2.html", null ],
     [ "Vector3", "class_race_tray_1_1_vector3.html", [
       [ "Vector3", "group___math.html#ga0f49191f7e001e7f7ae1cb49522118b4", null ],
       [ "Vector3", "group___math.html#gaaa5ebab83f6d1f282df85ece8153311d", null ],
@@ -42,12 +68,20 @@ var group___math =
       [ "_y", "class_race_tray_1_1_vector3.html#a2c6f896008bbdc99dad497e9ed12e7ab", null ],
       [ "_z", "class_race_tray_1_1_vector3.html#ab98d2b6c433918268e3d8c26576d9f3e", null ]
     ] ],
+    [ "Colord", "group___math.html#gaf823d8c8bfe82b4114d3d71143b95d63", null ],
+    [ "Colorf", "group___math.html#gaceb269408b1acca232f701aa53d02857", null ],
     [ "Rayf", "group___math.html#ga5fdea6c2a8db84c0cc5b7aaeeb48b17a", null ],
+    [ "Vector2d", "group___math.html#ga5373c51213c640389207bc20d53938d2", null ],
+    [ "Vector2f", "group___math.html#gabf7d0f12bb01ae49c6f6beac2beead58", null ],
+    [ "Vector2i", "group___math.html#gad3de4c43503d95985d8e4fcbf1a8bc16", null ],
     [ "Vector3d", "group___math.html#ga3cf322716609965f0debf240c4eb8ab6", null ],
     [ "Vector3f", "group___math.html#gadb6fa781064c3c3c9b13eb984adae162", null ],
     [ "Vector3i", "group___math.html#ga732981bed6c760c8857decb1e04b2118", null ],
     [ "Vector3l", "group___math.html#ga7d214bec28c2592b61b69cbf169d45cf", null ],
     [ "add", "group___math.html#gaf130562c28e9acf79a1947eae9bc583b", null ],
+    [ "Color", "group___math.html#ga9a742cbe9f9f4037f5d9f4e81a9b2428", null ],
+    [ "Color", "group___math.html#gad9c19651c0feb39d14efb0bf957c9cf9", null ],
+    [ "Color", "group___math.html#ga866f5b3f4192cdd953900b3bdae4b2cd", null ],
     [ "cross", "group___math.html#ga3bad6b5bd57c5e674c6cb47e6eb75246", null ],
     [ "dot", "group___math.html#ga6a55bfca19953a2b43b30796e4ce3f67", null ],
     [ "getDirection", "group___math.html#gaab0b0ed57af0899286c2996dfdc9418b", null ],
@@ -66,6 +100,7 @@ var group___math =
     [ "operator+=", "group___math.html#ga5ccb50254f27230d20aab11372215fbc", null ],
     [ "operator-", "group___math.html#gaa69c327bce74c6fccc67732aa72d51e4", null ],
     [ "operator-=", "group___math.html#gae0287f848b8e46e8e2abbaa1a8940f9d", null ],
+    [ "operator=", "group___math.html#ga495cb1736fef1e5306e572365203ff42", null ],
     [ "operator=", "group___math.html#gadcef1abbe010682b06779beab2fddc9e", null ],
     [ "operator==", "group___math.html#gacc0738d9f3ef7de9deb35b27472e6397", null ],
     [ "operator[]", "group___math.html#gac176f26759f013157ae339e037abcbbd", null ],
@@ -79,6 +114,7 @@ var group___math =
     [ "Vector3", "group___math.html#gaaa5ebab83f6d1f282df85ece8153311d", null ],
     [ "Vector3", "group___math.html#ga1467854ce0d4ef24f84fecf84446910b", null ],
     [ "Vector3", "group___math.html#ga636420f8171f95d953e80b9752ca98e8", null ],
+    [ "~Color", "group___math.html#ga3cfce6c6821d3bf489e26074c55378c0", null ],
     [ "~Ray", "group___math.html#ga8b0e575ce5df046c0c7615c32a96a46f", null ],
     [ "~Vector3", "group___math.html#ga5545e13e2e2861ece8f14b12a6a8101f", null ]
 ];

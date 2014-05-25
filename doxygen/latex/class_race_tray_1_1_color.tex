@@ -1,0 +1,295 @@
+\hypertarget{class_race_tray_1_1_color}{\section{Race\-Tray\-:\-:Color$<$ Unit $>$ Class Template Reference}
+\label{class_race_tray_1_1_color}\index{Race\-Tray\-::\-Color$<$ Unit $>$@{Race\-Tray\-::\-Color$<$ Unit $>$}}
+}
+
+
+{\ttfamily \#include $<$R\-T\-Color.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___math_ga9a742cbe9f9f4037f5d9f4e81a9b2428}{Color} ()
+\item 
+\hyperlink{group___math_gad9c19651c0feb39d14efb0bf957c9cf9}{Color} (Unit r, Unit g, Unit b, Unit a)
+\item 
+\hyperlink{group___math_ga866f5b3f4192cdd953900b3bdae4b2cd}{Color} (const \hyperlink{class_race_tray_1_1_color}{Color} \&other)
+\item 
+\hyperlink{group___math_ga3cfce6c6821d3bf489e26074c55378c0}{$\sim$\-Color} ()
+\item 
+\hyperlink{class_race_tray_1_1_color}{Color} \& \hyperlink{group___math_ga495cb1736fef1e5306e572365203ff42}{operator=} (const \hyperlink{class_race_tray_1_1_color}{Color} \&other)
+\item 
+Unit \hyperlink{class_race_tray_1_1_color_ab8e031b4a93a561509213d92d026dbbe}{get\-Red} () const 
+\item 
+void \hyperlink{class_race_tray_1_1_color_a07407c9dc5450e4d3edd11ca8fc0a5d6}{set\-Red} (Unit value)
+\item 
+Unit \hyperlink{class_race_tray_1_1_color_a73be96b524d361182fdef4aaaca34f9b}{get\-Green} () const 
+\item 
+void \hyperlink{class_race_tray_1_1_color_a1ad38db0398efaea9737c56f55d14030}{set\-Green} (Unit value)
+\item 
+Unit \hyperlink{class_race_tray_1_1_color_a2fdec11353b58a1b5e59bb87594206dd}{get\-Blue} () const 
+\item 
+void \hyperlink{class_race_tray_1_1_color_a0033768eb09b5cd90a780b34830ac577}{set\-Blue} (Unit value)
+\item 
+Unit \hyperlink{class_race_tray_1_1_color_a72a884a0a1a2fe2e406ff2ab012360f5}{get\-Alpha} () const 
+\item 
+void \hyperlink{class_race_tray_1_1_color_ad1959b679e3e7c3bd88e078d98c4e8ae}{set\-Alpha} (Unit value)
+\item 
+\hyperlink{class_race_tray_1_1_color}{Color} \& \hyperlink{class_race_tray_1_1_color_ac5abb56ea0b51d2df819e873b8539399}{operator+=} (const \hyperlink{class_race_tray_1_1_color}{Color} \&other)
+\item 
+\hyperlink{class_race_tray_1_1_color}{Color} \& \hyperlink{class_race_tray_1_1_color_abdab4e4920642970217635ba97cdfefc}{add} (const \hyperlink{class_race_tray_1_1_color}{Color} \&other)
+\item 
+\hyperlink{class_race_tray_1_1_color}{Color} \hyperlink{class_race_tray_1_1_color_aa82e66afb467bab0074be4e82362a9fe}{operator+} (const \hyperlink{class_race_tray_1_1_color}{Color} \&other) const 
+\item 
+\hyperlink{class_race_tray_1_1_color}{Color} \hyperlink{class_race_tray_1_1_color_a807c15bcd88c175dc296e5755e218201}{sum} (const \hyperlink{class_race_tray_1_1_color}{Color} \&other) const 
+\item 
+\hyperlink{class_race_tray_1_1_color}{Color} \& \hyperlink{class_race_tray_1_1_color_a625f389f8990d6b9c72fcf4f015f246b}{operator-\/=} (const \hyperlink{class_race_tray_1_1_color}{Color} \&other)
+\item 
+\hyperlink{class_race_tray_1_1_color}{Color} \& \hyperlink{class_race_tray_1_1_color_aa48224a163f209e4cc14d469dd2bb409}{sub} (const \hyperlink{class_race_tray_1_1_color}{Color} \&other)
+\item 
+\hyperlink{class_race_tray_1_1_color}{Color} \hyperlink{class_race_tray_1_1_color_ae56d582340b54a63a957c5bc1b11e72a}{operator-\/} (const \hyperlink{class_race_tray_1_1_color}{Color} \&other) const 
+\item 
+\hyperlink{class_race_tray_1_1_color}{Color} \hyperlink{class_race_tray_1_1_color_a9c37343537eb86200e83086a06a15df6}{difference} (const \hyperlink{class_race_tray_1_1_color}{Color} \&other) const 
+\item 
+void \hyperlink{class_race_tray_1_1_color_ae106d58f45c7d70d96eeb190262f78b6}{clamp} ()
+\item 
+\hyperlink{class_race_tray_1_1_color}{Color} \hyperlink{class_race_tray_1_1_color_ab789ee21b42357d9c29a858b8a310948}{clamped} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Unit$>$class Race\-Tray\-::\-Color$<$ Unit $>$}
+
+4-\/channel color values represented as \{r, g, b, a\} with each channel having a range of \mbox{[}0..1\mbox{]} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_race_tray_1_1_color_abdab4e4920642970217635ba97cdfefc}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!add@{add}}
+\index{add@{add}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ {\bf Color}\& {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Color}$<$ Unit $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_color_abdab4e4920642970217635ba97cdfefc}
+Add two colors together 
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_race_tray_1_1_color}{Color}\& The color to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_race_tray_1_1_color}{Color}\& The sum of the two colors 
+\end{DoxyReturn}
+\hypertarget{class_race_tray_1_1_color_ae106d58f45c7d70d96eeb190262f78b6}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!clamp@{clamp}}
+\index{clamp@{clamp}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{clamp}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ void {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::clamp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_color_ae106d58f45c7d70d96eeb190262f78b6}
+Clamp the values of the color between \mbox{[}0..1\mbox{]} \hypertarget{class_race_tray_1_1_color_ab789ee21b42357d9c29a858b8a310948}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!clamped@{clamped}}
+\index{clamped@{clamped}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{clamped}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ {\bf Color} {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::clamped (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_race_tray_1_1_color_ab789ee21b42357d9c29a858b8a310948}
+Return a copy of the color clamped between \mbox{[}0..1\mbox{]} \begin{DoxyReturn}{Returns}
+\hyperlink{class_race_tray_1_1_color}{Color} The clamped color 
+\end{DoxyReturn}
+\hypertarget{class_race_tray_1_1_color_a9c37343537eb86200e83086a06a15df6}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!difference@{difference}}
+\index{difference@{difference}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{difference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ {\bf Color} {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::difference (
+\begin{DoxyParamCaption}
+\item[{const {\bf Color}$<$ Unit $>$ \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{class_race_tray_1_1_color_a9c37343537eb86200e83086a06a15df6}
+Find the difference between two colors 
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_race_tray_1_1_color}{Color}\& The color to subtract \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_race_tray_1_1_color}{Color} The difference of the two colors 
+\end{DoxyReturn}
+\hypertarget{class_race_tray_1_1_color_a72a884a0a1a2fe2e406ff2ab012360f5}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!get\-Alpha@{get\-Alpha}}
+\index{get\-Alpha@{get\-Alpha}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{get\-Alpha}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ Unit {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::get\-Alpha (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_race_tray_1_1_color_a72a884a0a1a2fe2e406ff2ab012360f5}
+Get the alpha channel \begin{DoxyReturn}{Returns}
+Unit The color's alpha channel 
+\end{DoxyReturn}
+\hypertarget{class_race_tray_1_1_color_a2fdec11353b58a1b5e59bb87594206dd}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!get\-Blue@{get\-Blue}}
+\index{get\-Blue@{get\-Blue}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{get\-Blue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ Unit {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::get\-Blue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_race_tray_1_1_color_a2fdec11353b58a1b5e59bb87594206dd}
+Get the blue channel \begin{DoxyReturn}{Returns}
+Unit The color's blue channel 
+\end{DoxyReturn}
+\hypertarget{class_race_tray_1_1_color_a73be96b524d361182fdef4aaaca34f9b}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!get\-Green@{get\-Green}}
+\index{get\-Green@{get\-Green}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{get\-Green}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ Unit {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::get\-Green (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_race_tray_1_1_color_a73be96b524d361182fdef4aaaca34f9b}
+Get the green channel \begin{DoxyReturn}{Returns}
+Unit The color's green channel 
+\end{DoxyReturn}
+\hypertarget{class_race_tray_1_1_color_ab8e031b4a93a561509213d92d026dbbe}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!get\-Red@{get\-Red}}
+\index{get\-Red@{get\-Red}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{get\-Red}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ Unit {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::get\-Red (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_race_tray_1_1_color_ab8e031b4a93a561509213d92d026dbbe}
+Get the red channel \begin{DoxyReturn}{Returns}
+Unit The color's red channel 
+\end{DoxyReturn}
+\hypertarget{class_race_tray_1_1_color_aa82e66afb467bab0074be4e82362a9fe}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!operator+@{operator+}}
+\index{operator+@{operator+}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ {\bf Color} {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Color}$<$ Unit $>$ \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{class_race_tray_1_1_color_aa82e66afb467bab0074be4e82362a9fe}
+Add two colors together 
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_race_tray_1_1_color}{Color}\& The color to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_race_tray_1_1_color}{Color} The sum of the two colors 
+\end{DoxyReturn}
+\hypertarget{class_race_tray_1_1_color_ac5abb56ea0b51d2df819e873b8539399}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ {\bf Color}\& {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Color}$<$ Unit $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_color_ac5abb56ea0b51d2df819e873b8539399}
+Add two colors together 
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_race_tray_1_1_color}{Color}\& The color to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_race_tray_1_1_color}{Color}\& The sum of the two colors 
+\end{DoxyReturn}
+\hypertarget{class_race_tray_1_1_color_ae56d582340b54a63a957c5bc1b11e72a}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ {\bf Color} {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Color}$<$ Unit $>$ \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{class_race_tray_1_1_color_ae56d582340b54a63a957c5bc1b11e72a}
+Find the difference between two colors 
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_race_tray_1_1_color}{Color}\& The color to subtract \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_race_tray_1_1_color}{Color} The difference of the two colors 
+\end{DoxyReturn}
+\hypertarget{class_race_tray_1_1_color_a625f389f8990d6b9c72fcf4f015f246b}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ {\bf Color}\& {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Color}$<$ Unit $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_color_a625f389f8990d6b9c72fcf4f015f246b}
+Find the difference between two colors 
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_race_tray_1_1_color}{Color}\& The color to subtract \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_race_tray_1_1_color}{Color}\& The difference of the two colors 
+\end{DoxyReturn}
+\hypertarget{class_race_tray_1_1_color_ad1959b679e3e7c3bd88e078d98c4e8ae}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!set\-Alpha@{set\-Alpha}}
+\index{set\-Alpha@{set\-Alpha}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{set\-Alpha}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ void {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::set\-Alpha (
+\begin{DoxyParamCaption}
+\item[{Unit}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_color_ad1959b679e3e7c3bd88e078d98c4e8ae}
+Set the alpha channel 
+\begin{DoxyParams}{Parameters}
+{\em Unit} & The color's alpha channel \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_race_tray_1_1_color_a0033768eb09b5cd90a780b34830ac577}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!set\-Blue@{set\-Blue}}
+\index{set\-Blue@{set\-Blue}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{set\-Blue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ void {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::set\-Blue (
+\begin{DoxyParamCaption}
+\item[{Unit}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_color_a0033768eb09b5cd90a780b34830ac577}
+Set the blue channel 
+\begin{DoxyParams}{Parameters}
+{\em Unit} & The color's blue channel \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_race_tray_1_1_color_a1ad38db0398efaea9737c56f55d14030}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!set\-Green@{set\-Green}}
+\index{set\-Green@{set\-Green}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{set\-Green}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ void {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::set\-Green (
+\begin{DoxyParamCaption}
+\item[{Unit}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_color_a1ad38db0398efaea9737c56f55d14030}
+Set the green channel 
+\begin{DoxyParams}{Parameters}
+{\em Unit} & The color's green channel \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_race_tray_1_1_color_a07407c9dc5450e4d3edd11ca8fc0a5d6}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!set\-Red@{set\-Red}}
+\index{set\-Red@{set\-Red}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{set\-Red}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ void {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::set\-Red (
+\begin{DoxyParamCaption}
+\item[{Unit}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_color_a07407c9dc5450e4d3edd11ca8fc0a5d6}
+Set the red channel 
+\begin{DoxyParams}{Parameters}
+{\em Unit} & The color's red channel \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_race_tray_1_1_color_aa48224a163f209e4cc14d469dd2bb409}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!sub@{sub}}
+\index{sub@{sub}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{sub}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ {\bf Color}\& {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::sub (
+\begin{DoxyParamCaption}
+\item[{const {\bf Color}$<$ Unit $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_color_aa48224a163f209e4cc14d469dd2bb409}
+Find the difference between two colors 
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_race_tray_1_1_color}{Color}\& The color to subtract \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_race_tray_1_1_color}{Color}\& The difference of the two colors 
+\end{DoxyReturn}
+\hypertarget{class_race_tray_1_1_color_a807c15bcd88c175dc296e5755e218201}{\index{Race\-Tray\-::\-Color@{Race\-Tray\-::\-Color}!sum@{sum}}
+\index{sum@{sum}!RaceTray::Color@{Race\-Tray\-::\-Color}}
+\subsubsection[{sum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Unit$>$ {\bf Color} {\bf Race\-Tray\-::\-Color}$<$ Unit $>$\-::sum (
+\begin{DoxyParamCaption}
+\item[{const {\bf Color}$<$ Unit $>$ \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{class_race_tray_1_1_color_a807c15bcd88c175dc296e5755e218201}
+Add two colors together 
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_race_tray_1_1_color}{Color}\& The color to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_race_tray_1_1_color}{Color} The sum of the two colors 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Gael/\-Documents/\-Race\-Tray/\-Math/R\-T\-Color.\-h\item 
+C\-:/\-Users/\-Gael/\-Documents/\-Race\-Tray/\-Math/R\-T\-Color.\-inl\end{DoxyCompactItemize}

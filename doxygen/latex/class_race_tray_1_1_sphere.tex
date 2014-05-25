@@ -1,0 +1,97 @@
+\hypertarget{class_race_tray_1_1_sphere}{\section{Race\-Tray\-:\-:Sphere Class Reference}
+\label{class_race_tray_1_1_sphere}\index{Race\-Tray\-::\-Sphere@{Race\-Tray\-::\-Sphere}}
+}
+
+
+{\ttfamily \#include $<$R\-T\-Sphere.\-h$>$}
+
+Inheritance diagram for Race\-Tray\-:\-:Sphere\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_race_tray_1_1_sphere}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_race_tray_1_1_sphere_ab4eadefc469c162c0dfc943d90a88279}{Sphere} ()
+\item 
+\hyperlink{class_race_tray_1_1_sphere_a80375db61b09ba29ee6dacae567e28b8}{Sphere} (const \hyperlink{group___math_gadb6fa781064c3c3c9b13eb984adae162}{Vector3f} \&position, float radius)
+\item 
+\hyperlink{class_race_tray_1_1_sphere_a29714dd1da1688b1e150f2f32d6ce05a}{Sphere} (const \hyperlink{class_race_tray_1_1_sphere}{Sphere} \&other)
+\item 
+\hyperlink{class_race_tray_1_1_sphere_a6b6f93c73945477e091934e26cbe46f2}{$\sim$\-Sphere} ()
+\item 
+void \hyperlink{class_race_tray_1_1_sphere_a88cf632d6caf1ec6a0ce46efafd6f052}{check\-Ray\-Collision} (const \hyperlink{group___math_ga5fdea6c2a8db84c0cc5b7aaeeb48b17a}{Rayf} \&ray, \hyperlink{class_race_tray_1_1_scene_collision_data}{Scene\-Collision\-Data} \&data)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The base object. All engine entities derive from the base object. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_race_tray_1_1_sphere_ab4eadefc469c162c0dfc943d90a88279}{\index{Race\-Tray\-::\-Sphere@{Race\-Tray\-::\-Sphere}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!RaceTray::Sphere@{Race\-Tray\-::\-Sphere}}
+\subsubsection[{Sphere}]{\setlength{\rightskip}{0pt plus 5cm}Race\-Tray\-::\-Sphere\-::\-Sphere (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_sphere_ab4eadefc469c162c0dfc943d90a88279}
+Default constructor. The default radius for a sphere is 1m \hypertarget{class_race_tray_1_1_sphere_a80375db61b09ba29ee6dacae567e28b8}{\index{Race\-Tray\-::\-Sphere@{Race\-Tray\-::\-Sphere}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!RaceTray::Sphere@{Race\-Tray\-::\-Sphere}}
+\subsubsection[{Sphere}]{\setlength{\rightskip}{0pt plus 5cm}Race\-Tray\-::\-Sphere\-::\-Sphere (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3f} \&}]{position, }
+\item[{float}]{radius}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_sphere_a80375db61b09ba29ee6dacae567e28b8}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em const} & Vector3f The sphere's position \\
+\hline
+{\em float} & The radius of the sphere \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_race_tray_1_1_sphere_a29714dd1da1688b1e150f2f32d6ce05a}{\index{Race\-Tray\-::\-Sphere@{Race\-Tray\-::\-Sphere}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!RaceTray::Sphere@{Race\-Tray\-::\-Sphere}}
+\subsubsection[{Sphere}]{\setlength{\rightskip}{0pt plus 5cm}Race\-Tray\-::\-Sphere\-::\-Sphere (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sphere} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_sphere_a29714dd1da1688b1e150f2f32d6ce05a}
+Copy constructor const \hyperlink{class_race_tray_1_1_sphere}{Sphere}\& The sphere to copy \hypertarget{class_race_tray_1_1_sphere_a6b6f93c73945477e091934e26cbe46f2}{\index{Race\-Tray\-::\-Sphere@{Race\-Tray\-::\-Sphere}!$\sim$\-Sphere@{$\sim$\-Sphere}}
+\index{$\sim$\-Sphere@{$\sim$\-Sphere}!RaceTray::Sphere@{Race\-Tray\-::\-Sphere}}
+\subsubsection[{$\sim$\-Sphere}]{\setlength{\rightskip}{0pt plus 5cm}Race\-Tray\-::\-Sphere\-::$\sim$\-Sphere (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_sphere_a6b6f93c73945477e091934e26cbe46f2}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_race_tray_1_1_sphere_a88cf632d6caf1ec6a0ce46efafd6f052}{\index{Race\-Tray\-::\-Sphere@{Race\-Tray\-::\-Sphere}!check\-Ray\-Collision@{check\-Ray\-Collision}}
+\index{check\-Ray\-Collision@{check\-Ray\-Collision}!RaceTray::Sphere@{Race\-Tray\-::\-Sphere}}
+\subsubsection[{check\-Ray\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}void Race\-Tray\-::\-Sphere\-::check\-Ray\-Collision (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rayf} \&}]{ray, }
+\item[{{\bf Scene\-Collision\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_race_tray_1_1_sphere_a88cf632d6caf1ec6a0ce46efafd6f052}
+Check against this object for a ray collision. 
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_race_tray_1_1_ray}{Ray}\& The ray against which to check \\
+\hline
+{\em Scene\-Collision\-Data\&} & The information about the collision, if any \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_race_tray_1_1_object_a6ea71904be1d47e93378e58848b6eb87}{Race\-Tray\-::\-Object}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Gael/\-Documents/\-Race\-Tray/\-Geometry/R\-T\-Sphere.\-h\item 
+C\-:/\-Users/\-Gael/\-Documents/\-Race\-Tray/\-Geometry/R\-T\-Sphere.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,102 @@
+\hypertarget{class_race_tray_1_1_render_target}{\section{Race\-Tray\-:\-:Render\-Target Class Reference}
+\label{class_race_tray_1_1_render_target}\index{Race\-Tray\-::\-Render\-Target@{Race\-Tray\-::\-Render\-Target}}
+}
+
+
+{\ttfamily \#include $<$R\-T\-Render\-Target.\-h$>$}
+
+Inheritance diagram for Race\-Tray\-:\-:Render\-Target\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_race_tray_1_1_render_target}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_race_tray_1_1_render_target_a19af1e6e8c1d05d95f8a3d6443540d85}{Render\-Target} ()
+\item 
+virtual \hyperlink{class_race_tray_1_1_render_target_a18c35ced54cd155cd654efbac788e3a1}{$\sim$\-Render\-Target} ()
+\item 
+virtual bool \hyperlink{class_race_tray_1_1_render_target_a8ac06cc0f9af87e3373cd1514f64b76c}{initialize} (int width, int height)=0
+\item 
+virtual void \hyperlink{class_race_tray_1_1_render_target_a9e4e394b421102e5edaea14411dc28bd}{destroy} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_race_tray_1_1_render_target_a26912f27dd5d06467d2144049610057d}{\-\_\-width}
+\item 
+int \hyperlink{class_race_tray_1_1_render_target_af3c0dcb0091c5c5be2b3350fa8dce79b}{\-\_\-height}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The render target is the target output during the scene render process. Each pixels gets copied to the target before the final draw call is made. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_race_tray_1_1_render_target_a19af1e6e8c1d05d95f8a3d6443540d85}{\index{Race\-Tray\-::\-Render\-Target@{Race\-Tray\-::\-Render\-Target}!Render\-Target@{Render\-Target}}
+\index{Render\-Target@{Render\-Target}!RaceTray::RenderTarget@{Race\-Tray\-::\-Render\-Target}}
+\subsubsection[{Render\-Target}]{\setlength{\rightskip}{0pt plus 5cm}Race\-Tray\-::\-Render\-Target\-::\-Render\-Target (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_render_target_a19af1e6e8c1d05d95f8a3d6443540d85}
+Default constructor \hypertarget{class_race_tray_1_1_render_target_a18c35ced54cd155cd654efbac788e3a1}{\index{Race\-Tray\-::\-Render\-Target@{Race\-Tray\-::\-Render\-Target}!$\sim$\-Render\-Target@{$\sim$\-Render\-Target}}
+\index{$\sim$\-Render\-Target@{$\sim$\-Render\-Target}!RaceTray::RenderTarget@{Race\-Tray\-::\-Render\-Target}}
+\subsubsection[{$\sim$\-Render\-Target}]{\setlength{\rightskip}{0pt plus 5cm}Race\-Tray\-::\-Render\-Target\-::$\sim$\-Render\-Target (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_race_tray_1_1_render_target_a18c35ced54cd155cd654efbac788e3a1}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_race_tray_1_1_render_target_a9e4e394b421102e5edaea14411dc28bd}{\index{Race\-Tray\-::\-Render\-Target@{Race\-Tray\-::\-Render\-Target}!destroy@{destroy}}
+\index{destroy@{destroy}!RaceTray::RenderTarget@{Race\-Tray\-::\-Render\-Target}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Race\-Tray\-::\-Render\-Target\-::destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_race_tray_1_1_render_target_a9e4e394b421102e5edaea14411dc28bd}
+Destroy the render target 
+
+Implemented in \hyperlink{class_race_tray_1_1_static_render_target_a4f163966507ea68a0eccf7c3f5959bd3}{Race\-Tray\-::\-Static\-Render\-Target}.
+
+\hypertarget{class_race_tray_1_1_render_target_a8ac06cc0f9af87e3373cd1514f64b76c}{\index{Race\-Tray\-::\-Render\-Target@{Race\-Tray\-::\-Render\-Target}!initialize@{initialize}}
+\index{initialize@{initialize}!RaceTray::RenderTarget@{Race\-Tray\-::\-Render\-Target}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Race\-Tray\-::\-Render\-Target\-::initialize (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_race_tray_1_1_render_target_a8ac06cc0f9af87e3373cd1514f64b76c}
+Initialize the render target 
+\begin{DoxyParams}{Parameters}
+{\em int} & The width of the render target \\
+\hline
+{\em height} & The height of the render target \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Returns true if the target is successfully created 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_race_tray_1_1_static_render_target_a4f7bf1080af87d6b64e40771adac1861}{Race\-Tray\-::\-Static\-Render\-Target}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_race_tray_1_1_render_target_af3c0dcb0091c5c5be2b3350fa8dce79b}{\index{Race\-Tray\-::\-Render\-Target@{Race\-Tray\-::\-Render\-Target}!\-\_\-height@{\-\_\-height}}
+\index{\-\_\-height@{\-\_\-height}!RaceTray::RenderTarget@{Race\-Tray\-::\-Render\-Target}}
+\subsubsection[{\-\_\-height}]{\setlength{\rightskip}{0pt plus 5cm}int Race\-Tray\-::\-Render\-Target\-::\-\_\-height\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_race_tray_1_1_render_target_af3c0dcb0091c5c5be2b3350fa8dce79b}
+The height of the render target \hypertarget{class_race_tray_1_1_render_target_a26912f27dd5d06467d2144049610057d}{\index{Race\-Tray\-::\-Render\-Target@{Race\-Tray\-::\-Render\-Target}!\-\_\-width@{\-\_\-width}}
+\index{\-\_\-width@{\-\_\-width}!RaceTray::RenderTarget@{Race\-Tray\-::\-Render\-Target}}
+\subsubsection[{\-\_\-width}]{\setlength{\rightskip}{0pt plus 5cm}int Race\-Tray\-::\-Render\-Target\-::\-\_\-width\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_race_tray_1_1_render_target_a26912f27dd5d06467d2144049610057d}
+The width of the render target 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Gael/\-Documents/\-Race\-Tray/\-Scene/R\-T\-Render\-Target.\-h\item 
+C\-:/\-Users/\-Gael/\-Documents/\-Race\-Tray/\-Scene/R\-T\-Render\-Target.\-cpp\end{DoxyCompactItemize}

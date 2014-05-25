@@ -19,6 +19,10 @@ bool \hyperlink{class_race_tray_1_1_scene_a6c01bc164fe3188f9de317b5176bcd18}{ini
 void \hyperlink{class_race_tray_1_1_scene_abf3e9e56a8d5af553d0805fbdc807aeb}{destroy} ()
 \item 
 bool \hyperlink{class_race_tray_1_1_scene_a50293de9c949fbf279549d6618aa7dfb}{play} ()
+\item 
+void \hyperlink{class_race_tray_1_1_scene_aee10122e6078860b355900ff978832b1}{register\-Camera} (\hyperlink{class_race_tray_1_1_camera}{Camera} $\ast$camera)
+\item 
+void \hyperlink{class_race_tray_1_1_scene_a5501e7115475096e3b5753a209cf4af0}{add\-Renderable} (\hyperlink{class_race_tray_1_1_object}{Object} $\ast$object)
 \end{DoxyCompactItemize}
 
 
@@ -55,6 +59,18 @@ Copy constructor
 Destructor 
 
 \subsection{Member Function Documentation}
+\hypertarget{class_race_tray_1_1_scene_a5501e7115475096e3b5753a209cf4af0}{\index{Race\-Tray\-::\-Scene@{Race\-Tray\-::\-Scene}!add\-Renderable@{add\-Renderable}}
+\index{add\-Renderable@{add\-Renderable}!RaceTray::Scene@{Race\-Tray\-::\-Scene}}
+\subsubsection[{add\-Renderable}]{\setlength{\rightskip}{0pt plus 5cm}void Race\-Tray\-::\-Scene\-::add\-Renderable (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_scene_a5501e7115475096e3b5753a209cf4af0}
+Add a renderable object to the scene 
+\begin{DoxyParams}{Parameters}
+{\em Object$\ast$} & The object to add to the scene graph \\
+\hline
+\end{DoxyParams}
 \hypertarget{class_race_tray_1_1_scene_abf3e9e56a8d5af553d0805fbdc807aeb}{\index{Race\-Tray\-::\-Scene@{Race\-Tray\-::\-Scene}!destroy@{destroy}}
 \index{destroy@{destroy}!RaceTray::Scene@{Race\-Tray\-::\-Scene}}
 \subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}void Race\-Tray\-::\-Scene\-::destroy (
@@ -82,6 +98,18 @@ bool Returns true if the scene was initialized successfully
 Play the scene \begin{DoxyReturn}{Returns}
 bool Returns true if the scene was played successfully 
 \end{DoxyReturn}
+\hypertarget{class_race_tray_1_1_scene_aee10122e6078860b355900ff978832b1}{\index{Race\-Tray\-::\-Scene@{Race\-Tray\-::\-Scene}!register\-Camera@{register\-Camera}}
+\index{register\-Camera@{register\-Camera}!RaceTray::Scene@{Race\-Tray\-::\-Scene}}
+\subsubsection[{register\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}void Race\-Tray\-::\-Scene\-::register\-Camera (
+\begin{DoxyParamCaption}
+\item[{{\bf Camera} $\ast$}]{camera}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_scene_aee10122e6078860b355900ff978832b1}
+Register a camera with the scene and set it as the active camera 
+\begin{DoxyParams}{Parameters}
+{\em Camera$\ast$} & The camera to register \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

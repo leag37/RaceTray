@@ -1,0 +1,84 @@
+\hypertarget{class_race_tray_1_1_renderer}{\section{Race\-Tray\-:\-:Renderer Class Reference}
+\label{class_race_tray_1_1_renderer}\index{Race\-Tray\-::\-Renderer@{Race\-Tray\-::\-Renderer}}
+}
+
+
+{\ttfamily \#include $<$R\-T\-Renderer.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_race_tray_1_1_renderer_a83cc3c485a1ccaab2148f93698e52398}{Renderer} ()
+\item 
+\hyperlink{class_race_tray_1_1_renderer_a4569bede271aef7ed70e0b99018ef721}{$\sim$\-Renderer} ()
+\item 
+bool \hyperlink{class_race_tray_1_1_renderer_ac74c0a08970ff3c28a6c0c333ceeb7e2}{initialize} ()
+\item 
+void \hyperlink{class_race_tray_1_1_renderer_ae69c470e128ab281c1ce947ba9f2a77f}{destroy} ()
+\item 
+bool \hyperlink{class_race_tray_1_1_renderer_a8538367f6ab111b44089376de2dfeadb}{render} (const \hyperlink{class_race_tray_1_1_scene_graph}{Scene\-Graph} $\ast$scene\-Graph, const std\-::vector$<$ \hyperlink{class_race_tray_1_1_light}{Light} $\ast$ $>$ \&lights, const \hyperlink{class_race_tray_1_1_camera}{Camera} \&camera)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_race_tray_1_1_renderer}{Renderer} owns the rendering pipeline. It is responsible for applying colors to the frame and flushing the output when done. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_race_tray_1_1_renderer_a83cc3c485a1ccaab2148f93698e52398}{\index{Race\-Tray\-::\-Renderer@{Race\-Tray\-::\-Renderer}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!RaceTray::Renderer@{Race\-Tray\-::\-Renderer}}
+\subsubsection[{Renderer}]{\setlength{\rightskip}{0pt plus 5cm}Race\-Tray\-::\-Renderer\-::\-Renderer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_renderer_a83cc3c485a1ccaab2148f93698e52398}
+Default constructor \hypertarget{class_race_tray_1_1_renderer_a4569bede271aef7ed70e0b99018ef721}{\index{Race\-Tray\-::\-Renderer@{Race\-Tray\-::\-Renderer}!$\sim$\-Renderer@{$\sim$\-Renderer}}
+\index{$\sim$\-Renderer@{$\sim$\-Renderer}!RaceTray::Renderer@{Race\-Tray\-::\-Renderer}}
+\subsubsection[{$\sim$\-Renderer}]{\setlength{\rightskip}{0pt plus 5cm}Race\-Tray\-::\-Renderer\-::$\sim$\-Renderer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_renderer_a4569bede271aef7ed70e0b99018ef721}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_race_tray_1_1_renderer_ae69c470e128ab281c1ce947ba9f2a77f}{\index{Race\-Tray\-::\-Renderer@{Race\-Tray\-::\-Renderer}!destroy@{destroy}}
+\index{destroy@{destroy}!RaceTray::Renderer@{Race\-Tray\-::\-Renderer}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}void Race\-Tray\-::\-Renderer\-::destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_renderer_ae69c470e128ab281c1ce947ba9f2a77f}
+Destroy the renderer and all its components \hypertarget{class_race_tray_1_1_renderer_ac74c0a08970ff3c28a6c0c333ceeb7e2}{\index{Race\-Tray\-::\-Renderer@{Race\-Tray\-::\-Renderer}!initialize@{initialize}}
+\index{initialize@{initialize}!RaceTray::Renderer@{Race\-Tray\-::\-Renderer}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Race\-Tray\-::\-Renderer\-::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_renderer_ac74c0a08970ff3c28a6c0c333ceeb7e2}
+Initialize the renderer, including the output buffer \begin{DoxyReturn}{Returns}
+bool Return true if the initialization succeeded 
+\end{DoxyReturn}
+\hypertarget{class_race_tray_1_1_renderer_a8538367f6ab111b44089376de2dfeadb}{\index{Race\-Tray\-::\-Renderer@{Race\-Tray\-::\-Renderer}!render@{render}}
+\index{render@{render}!RaceTray::Renderer@{Race\-Tray\-::\-Renderer}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}bool Race\-Tray\-::\-Renderer\-::render (
+\begin{DoxyParamCaption}
+\item[{const {\bf Scene\-Graph} $\ast$}]{scene\-Graph, }
+\item[{const std\-::vector$<$ {\bf Light} $\ast$ $>$ \&}]{lights, }
+\item[{const {\bf Camera} \&}]{camera}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_renderer_a8538367f6ab111b44089376de2dfeadb}
+Given the scene graph, camera, and lights, render the scene to the target output 
+\begin{DoxyParams}{Parameters}
+{\em const} & Scene\-Graph$\ast$ The \hyperlink{class_race_tray_1_1_scene_graph}{Scene\-Graph} instance against which to render \\
+\hline
+{\em const} & vector$<$\-Light$\ast$$>$\& The vector holding all the light data in the scene \\
+\hline
+{\em const} & \hyperlink{class_race_tray_1_1_camera}{Camera}\& The scene's camera \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Gael/\-Documents/\-Race\-Tray/\-Scene/R\-T\-Renderer.\-h\item 
+C\-:/\-Users/\-Gael/\-Documents/\-Race\-Tray/\-Scene/R\-T\-Renderer.\-cpp\end{DoxyCompactItemize}

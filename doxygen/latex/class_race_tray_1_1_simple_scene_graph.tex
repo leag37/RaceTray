@@ -1,0 +1,83 @@
+\hypertarget{class_race_tray_1_1_simple_scene_graph}{\section{Race\-Tray\-:\-:Simple\-Scene\-Graph Class Reference}
+\label{class_race_tray_1_1_simple_scene_graph}\index{Race\-Tray\-::\-Simple\-Scene\-Graph@{Race\-Tray\-::\-Simple\-Scene\-Graph}}
+}
+
+
+{\ttfamily \#include $<$R\-T\-Simple\-Scene\-Graph.\-h$>$}
+
+Inheritance diagram for Race\-Tray\-:\-:Simple\-Scene\-Graph\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_race_tray_1_1_simple_scene_graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_race_tray_1_1_simple_scene_graph_a52781b41db73fe219fd5028811292dcb}{Simple\-Scene\-Graph} ()
+\item 
+\hyperlink{class_race_tray_1_1_simple_scene_graph_a80dbbdc5a7736f2b527ffe1b59d77c85}{$\sim$\-Simple\-Scene\-Graph} ()
+\item 
+bool \hyperlink{class_race_tray_1_1_simple_scene_graph_a0e8c2a6b8224a7fa473f729a781c372a}{initialize} ()
+\item 
+void \hyperlink{class_race_tray_1_1_simple_scene_graph_a5e10feecf7d0ddaa420bcdee20a4e4dc}{add} (\hyperlink{class_race_tray_1_1_object}{Object} $\ast$object)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The scene graph contains all physical scene information, including objects, particles, etc. A simple scene graph uses std\-::vectors and naive search methods for querying the scene. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_race_tray_1_1_simple_scene_graph_a52781b41db73fe219fd5028811292dcb}{\index{Race\-Tray\-::\-Simple\-Scene\-Graph@{Race\-Tray\-::\-Simple\-Scene\-Graph}!Simple\-Scene\-Graph@{Simple\-Scene\-Graph}}
+\index{Simple\-Scene\-Graph@{Simple\-Scene\-Graph}!RaceTray::SimpleSceneGraph@{Race\-Tray\-::\-Simple\-Scene\-Graph}}
+\subsubsection[{Simple\-Scene\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}Race\-Tray\-::\-Simple\-Scene\-Graph\-::\-Simple\-Scene\-Graph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_simple_scene_graph_a52781b41db73fe219fd5028811292dcb}
+Constructor \hypertarget{class_race_tray_1_1_simple_scene_graph_a80dbbdc5a7736f2b527ffe1b59d77c85}{\index{Race\-Tray\-::\-Simple\-Scene\-Graph@{Race\-Tray\-::\-Simple\-Scene\-Graph}!$\sim$\-Simple\-Scene\-Graph@{$\sim$\-Simple\-Scene\-Graph}}
+\index{$\sim$\-Simple\-Scene\-Graph@{$\sim$\-Simple\-Scene\-Graph}!RaceTray::SimpleSceneGraph@{Race\-Tray\-::\-Simple\-Scene\-Graph}}
+\subsubsection[{$\sim$\-Simple\-Scene\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}Race\-Tray\-::\-Simple\-Scene\-Graph\-::$\sim$\-Simple\-Scene\-Graph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_simple_scene_graph_a80dbbdc5a7736f2b527ffe1b59d77c85}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_race_tray_1_1_simple_scene_graph_a5e10feecf7d0ddaa420bcdee20a4e4dc}{\index{Race\-Tray\-::\-Simple\-Scene\-Graph@{Race\-Tray\-::\-Simple\-Scene\-Graph}!add@{add}}
+\index{add@{add}!RaceTray::SimpleSceneGraph@{Race\-Tray\-::\-Simple\-Scene\-Graph}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void Race\-Tray\-::\-Simple\-Scene\-Graph\-::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_race_tray_1_1_simple_scene_graph_a5e10feecf7d0ddaa420bcdee20a4e4dc}
+Add an object to the scene graph 
+\begin{DoxyParams}{Parameters}
+{\em Object$\ast$} & The object being added \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_race_tray_1_1_scene_graph_a856688d0b5182658c8e9d62bfbc54d6c}{Race\-Tray\-::\-Scene\-Graph}.
+
+\hypertarget{class_race_tray_1_1_simple_scene_graph_a0e8c2a6b8224a7fa473f729a781c372a}{\index{Race\-Tray\-::\-Simple\-Scene\-Graph@{Race\-Tray\-::\-Simple\-Scene\-Graph}!initialize@{initialize}}
+\index{initialize@{initialize}!RaceTray::SimpleSceneGraph@{Race\-Tray\-::\-Simple\-Scene\-Graph}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Race\-Tray\-::\-Simple\-Scene\-Graph\-::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_race_tray_1_1_simple_scene_graph_a0e8c2a6b8224a7fa473f729a781c372a}
+Initialize the scene graph \begin{DoxyReturn}{Returns}
+bool Returns true if successful 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_race_tray_1_1_scene_graph_ac6fcc253f175397971d742747b1bbc6f}{Race\-Tray\-::\-Scene\-Graph}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Gael/\-Documents/\-Race\-Tray/\-Scene/R\-T\-Simple\-Scene\-Graph.\-h\item 
+C\-:/\-Users/\-Gael/\-Documents/\-Race\-Tray/\-Scene/R\-T\-Simple\-Scene\-Graph.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,154 @@
+\hypertarget{class_race_tray_1_1_object}{\section{Race\-Tray\-:\-:Object Class Reference}
+\label{class_race_tray_1_1_object}\index{Race\-Tray\-::\-Object@{Race\-Tray\-::\-Object}}
+}
+
+
+{\ttfamily \#include $<$R\-T\-Object.\-h$>$}
+
+Inheritance diagram for Race\-Tray\-:\-:Object\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_race_tray_1_1_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_race_tray_1_1_object_a3d14b748925951286cdc9f7b7d89f7fc}{Object} ()
+\item 
+\hyperlink{class_race_tray_1_1_object_a71b2eda3dc35db9c3719d8e5d203cb8e}{Object} (const \hyperlink{group___math_gadb6fa781064c3c3c9b13eb984adae162}{Vector3f} \&position)
+\item 
+\hyperlink{class_race_tray_1_1_object_ad9dd5ecc6017aa2f2054c145ff7830b1}{Object} (const \hyperlink{class_race_tray_1_1_object}{Object} \&other)
+\item 
+virtual \hyperlink{class_race_tray_1_1_object_aa1d05ba307a8bbeb1c8e01427d6daa58}{$\sim$\-Object} ()
+\item 
+const \hyperlink{group___math_gadb6fa781064c3c3c9b13eb984adae162}{Vector3f} \& \hyperlink{class_race_tray_1_1_object_a0b5489af58a3195079940162ed7307fe}{get\-Position} () const 
+\item 
+void \hyperlink{class_race_tray_1_1_object_a2401b3f2bcaaf2fc9f55b3b677d30b77}{set\-Position} (const \hyperlink{group___math_gadb6fa781064c3c3c9b13eb984adae162}{Vector3f} \&value)
+\item 
+void \hyperlink{class_race_tray_1_1_object_af5b702a62a9d6fd27f0c012df0f2e795}{set\-Material} (const \hyperlink{class_race_tray_1_1_material}{Material} \&material)
+\item 
+virtual void \hyperlink{class_race_tray_1_1_object_a6ea71904be1d47e93378e58848b6eb87}{check\-Ray\-Collision} (const \hyperlink{group___math_ga5fdea6c2a8db84c0cc5b7aaeeb48b17a}{Rayf} \&ray, \hyperlink{class_race_tray_1_1_scene_collision_data}{Scene\-Collision\-Data} \&data)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___math_gadb6fa781064c3c3c9b13eb984adae162}{Vector3f} \hyperlink{class_race_tray_1_1_object_afc27cf33104f6af734684534e3230723}{\-\_\-position}
+\item 
+\hyperlink{class_race_tray_1_1_material}{Material} \hyperlink{class_race_tray_1_1_object_a659c1956bd811a2cc687fd899f3aa0e0}{\-\_\-material}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The base object. All engine entities derive from the base object. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_race_tray_1_1_object_a3d14b748925951286cdc9f7b7d89f7fc}{\index{Race\-Tray\-::\-Object@{Race\-Tray\-::\-Object}!Object@{Object}}
+\index{Object@{Object}!RaceTray::Object@{Race\-Tray\-::\-Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}Race\-Tray\-::\-Object\-::\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_object_a3d14b748925951286cdc9f7b7d89f7fc}
+Default constructor \hypertarget{class_race_tray_1_1_object_a71b2eda3dc35db9c3719d8e5d203cb8e}{\index{Race\-Tray\-::\-Object@{Race\-Tray\-::\-Object}!Object@{Object}}
+\index{Object@{Object}!RaceTray::Object@{Race\-Tray\-::\-Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}Race\-Tray\-::\-Object\-::\-Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3f} \&}]{position}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_object_a71b2eda3dc35db9c3719d8e5d203cb8e}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em const} & Vector3f The position of the object \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_race_tray_1_1_object_ad9dd5ecc6017aa2f2054c145ff7830b1}{\index{Race\-Tray\-::\-Object@{Race\-Tray\-::\-Object}!Object@{Object}}
+\index{Object@{Object}!RaceTray::Object@{Race\-Tray\-::\-Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}Race\-Tray\-::\-Object\-::\-Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_object_ad9dd5ecc6017aa2f2054c145ff7830b1}
+Copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_race_tray_1_1_object}{Object}\& The object to copy \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_race_tray_1_1_object_aa1d05ba307a8bbeb1c8e01427d6daa58}{\index{Race\-Tray\-::\-Object@{Race\-Tray\-::\-Object}!$\sim$\-Object@{$\sim$\-Object}}
+\index{$\sim$\-Object@{$\sim$\-Object}!RaceTray::Object@{Race\-Tray\-::\-Object}}
+\subsubsection[{$\sim$\-Object}]{\setlength{\rightskip}{0pt plus 5cm}Race\-Tray\-::\-Object\-::$\sim$\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_race_tray_1_1_object_aa1d05ba307a8bbeb1c8e01427d6daa58}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_race_tray_1_1_object_a6ea71904be1d47e93378e58848b6eb87}{\index{Race\-Tray\-::\-Object@{Race\-Tray\-::\-Object}!check\-Ray\-Collision@{check\-Ray\-Collision}}
+\index{check\-Ray\-Collision@{check\-Ray\-Collision}!RaceTray::Object@{Race\-Tray\-::\-Object}}
+\subsubsection[{check\-Ray\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Race\-Tray\-::\-Object\-::check\-Ray\-Collision (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rayf} \&}]{ray, }
+\item[{{\bf Scene\-Collision\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_race_tray_1_1_object_a6ea71904be1d47e93378e58848b6eb87}
+Check against this object for a ray collision. 
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_race_tray_1_1_ray}{Ray}\& The ray against which to check \\
+\hline
+{\em Scene\-Collision\-Data\&} & The information about the collision, if any \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_race_tray_1_1_sphere_a88cf632d6caf1ec6a0ce46efafd6f052}{Race\-Tray\-::\-Sphere}.
+
+\hypertarget{class_race_tray_1_1_object_a0b5489af58a3195079940162ed7307fe}{\index{Race\-Tray\-::\-Object@{Race\-Tray\-::\-Object}!get\-Position@{get\-Position}}
+\index{get\-Position@{get\-Position}!RaceTray::Object@{Race\-Tray\-::\-Object}}
+\subsubsection[{get\-Position}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector3f} \& Race\-Tray\-::\-Object\-::get\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_race_tray_1_1_object_a0b5489af58a3195079940162ed7307fe}
+Return the object position \begin{DoxyReturn}{Returns}
+const Vector3f\& The object position 
+\end{DoxyReturn}
+\hypertarget{class_race_tray_1_1_object_af5b702a62a9d6fd27f0c012df0f2e795}{\index{Race\-Tray\-::\-Object@{Race\-Tray\-::\-Object}!set\-Material@{set\-Material}}
+\index{set\-Material@{set\-Material}!RaceTray::Object@{Race\-Tray\-::\-Object}}
+\subsubsection[{set\-Material}]{\setlength{\rightskip}{0pt plus 5cm}void Race\-Tray\-::\-Object\-::set\-Material (
+\begin{DoxyParamCaption}
+\item[{const {\bf Material} \&}]{material}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_object_af5b702a62a9d6fd27f0c012df0f2e795}
+Set the material for the object 
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_race_tray_1_1_material}{Material}\& The material to set for this object \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_race_tray_1_1_object_a2401b3f2bcaaf2fc9f55b3b677d30b77}{\index{Race\-Tray\-::\-Object@{Race\-Tray\-::\-Object}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!RaceTray::Object@{Race\-Tray\-::\-Object}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Race\-Tray\-::\-Object\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3f} \&}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_race_tray_1_1_object_a2401b3f2bcaaf2fc9f55b3b677d30b77}
+Set the object position 
+\begin{DoxyParams}{Parameters}
+{\em const} & Vector3f\& The new position \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_race_tray_1_1_object_a659c1956bd811a2cc687fd899f3aa0e0}{\index{Race\-Tray\-::\-Object@{Race\-Tray\-::\-Object}!\-\_\-material@{\-\_\-material}}
+\index{\-\_\-material@{\-\_\-material}!RaceTray::Object@{Race\-Tray\-::\-Object}}
+\subsubsection[{\-\_\-material}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Material} Race\-Tray\-::\-Object\-::\-\_\-material\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_race_tray_1_1_object_a659c1956bd811a2cc687fd899f3aa0e0}
+The object's material \hypertarget{class_race_tray_1_1_object_afc27cf33104f6af734684534e3230723}{\index{Race\-Tray\-::\-Object@{Race\-Tray\-::\-Object}!\-\_\-position@{\-\_\-position}}
+\index{\-\_\-position@{\-\_\-position}!RaceTray::Object@{Race\-Tray\-::\-Object}}
+\subsubsection[{\-\_\-position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3f} Race\-Tray\-::\-Object\-::\-\_\-position\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_race_tray_1_1_object_afc27cf33104f6af734684534e3230723}
+Position of the object 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Gael/\-Documents/\-Race\-Tray/\-Geometry/R\-T\-Object.\-h\item 
+C\-:/\-Users/\-Gael/\-Documents/\-Race\-Tray/\-Geometry/R\-T\-Object.\-cpp\end{DoxyCompactItemize}
