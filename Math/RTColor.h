@@ -50,6 +50,15 @@ namespace RaceTray
         ~Color();
 
         /**
+        * Assignment operator
+        * @param
+        *   const Color<Unit>& The color to assign
+        * @return
+        *   Color<Unit>& The color after the assignment has been finished
+        */
+        Color& operator=(const Color& other);
+
+        /**
         * Get the red channel
         * @return
         *   Unit The color's red channel
@@ -104,15 +113,6 @@ namespace RaceTray
         *   Unit The color's alpha channel
         */
         void setAlpha(Unit value);
-
-        /**
-        * Assignment operator
-        * @param
-        *   const Color<Unit>& The color to assign
-        * @return
-        *   Color<Unit>& The color after the assignment has been finished
-        */
-        Color& operator=(const Color& other);
 
         /**
         * Add two colors together

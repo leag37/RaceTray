@@ -61,6 +61,20 @@ namespace RaceTray
         */
         bool play();
 
+        /**
+        * Register a camera with the scene and set it as the active camera
+        * @param
+        *   Camera* The camera to register
+        */
+        void registerCamera(Camera* camera);
+
+        /**
+        * Add a renderable object to the scene
+        * @param
+        *   Object* The object to add to the scene graph
+        */
+        void addRenderable(Object* object);
+
     private:
         /**
         * Scene graph

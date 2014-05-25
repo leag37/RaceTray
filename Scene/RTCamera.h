@@ -1,9 +1,10 @@
-
+// Filename: RTCamera.h
+// Author: Gael Huber
+// Description: A simple camera class
 #ifndef __RTCAMERA_H__
 #define __RTCAMERA_H__
 
 #include "Math/RTMath.h"
-#include "Scene/RTRenderTarget.h"
 
 namespace RaceTray
 {
@@ -23,20 +24,23 @@ namespace RaceTray
         */
         Camera();
 
+        /**
+        * Destructor
+        */
         virtual ~Camera();
+
+        /**
+        * Set the camera position
+        * @param
+        *   const Vector3f& The new camera position
+        */
+        void setPosition(const Vector3f& value);
 
         /**
         * Given screen coordinates (x, y), calculate the direction vector for the ray originating
         * at the focal point
         */
         Rayf getRayForScreenCoords(const Vector2i& screenCoords) const;
-
-        /**
-        * Return the render target
-        * @return
-        *   RenderTarget& The render target attached to the camera
-        */
-        RenderTarget& getRenderTarget() const;
 
     private:
         /**
@@ -63,11 +67,6 @@ namespace RaceTray
         * The up vector for the camera
         */
         Vector3f _up;
-
-        /**
-        * The render target associated with this camera
-        */
-        RenderTarget _target;
     };
 
     /** @} */

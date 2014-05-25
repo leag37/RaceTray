@@ -5,13 +5,60 @@
 
 namespace RaceTray
 {
+
+    /**
+    * Default constructor
+    */
+    Renderer::Renderer()
+        :   _renderTarget(0)
+    { }
+
+    /**
+    * Destructor
+    */
+    Renderer::~Renderer()
+    { }
+
+    /**
+    * Initialize the renderer, including the output buffer
+    * @return
+    *   bool Return true if the initialization succeeded
+    */
+    bool Renderer::initialize()
+    {
+        // Create the render target. At this point, create a static, image-based render target
+        // TODO: Create an OpenGL render target so that we may output to the screen buffer and watch the render realtime
+        _renderTarget = new StaticRenderTarget();
+        if(_renderTarget->initialize(400, 600) == false)
+        {
+            return false;
+        }
+
+        // All targets were initialized successfully, return true
+        return true;
+    }
+
+    /**
+    * Destroy the renderer and all its components
+    */
+    void destroy();
+
+    /**
+    * Given the scene graph, camera, and lights, render the scene to the target output
+    * @param
+    *   const SceneGraph* The SceneGraph instance against which to render
+    * @param
+    *   const vector<Light*>& The vector holding all the light data in the scene
+    * @param
+    *   const Camera& The scene's camera
+    */
     bool Renderer::render(const SceneGraph* sceneGraph, const std::vector<Light*>& lights, const Camera& camera)
     {
         // Iterate through each pixel in the scene
         // For each pixel, construct a ray
         // Trace the ray against the scene graph
         /*
-        RenderTarget& renderTarget = camera.getRenderTarget();
+        //RenderTarget& renderTarget = camera.getRenderTarget();
 
         // Iterate through all pixels in the target
         for(int x = 0; x < renderTarget.getWidth(); ++x)

@@ -66,7 +66,22 @@
 		<Unit filename="Core/Main.cpp">
 			<Option virtualFolder="Core/" />
 		</Unit>
+		<Unit filename="Effects/RTMaterial.cpp">
+			<Option virtualFolder="Effects/" />
+		</Unit>
+		<Unit filename="Effects/RTMaterial.h">
+			<Option virtualFolder="Effects/" />
+		</Unit>
+		<Unit filename="Geometry/RTObject.cpp">
+			<Option virtualFolder="Geometry/" />
+		</Unit>
 		<Unit filename="Geometry/RTObject.h">
+			<Option virtualFolder="Geometry/" />
+		</Unit>
+		<Unit filename="Geometry/RTSphere.cpp">
+			<Option virtualFolder="Geometry/" />
+		</Unit>
+		<Unit filename="Geometry/RTSphere.h">
 			<Option virtualFolder="Geometry/" />
 		</Unit>
 		<Unit filename="Math/RTColor.h">
@@ -102,6 +117,9 @@
 		<Unit filename="Math/RTVector3.inl">
 			<Option virtualFolder="Math/" />
 		</Unit>
+		<Unit filename="Scene/RTCamera.cpp">
+			<Option virtualFolder="Scene/" />
+		</Unit>
 		<Unit filename="Scene/RTCamera.h">
 			<Option virtualFolder="Scene/" />
 		</Unit>
@@ -109,6 +127,9 @@
 			<Option virtualFolder="Scene/" />
 		</Unit>
 		<Unit filename="Scene/RTLightPair.h">
+			<Option virtualFolder="Scene/" />
+		</Unit>
+		<Unit filename="Scene/RTRenderTarget.cpp">
 			<Option virtualFolder="Scene/" />
 		</Unit>
 		<Unit filename="Scene/RTRenderTarget.h">
@@ -126,13 +147,40 @@
 		<Unit filename="Scene/RTScene.h">
 			<Option virtualFolder="Scene/" />
 		</Unit>
+		<Unit filename="Scene/RTSceneBuilder.cpp">
+			<Option virtualFolder="Scene/" />
+		</Unit>
 		<Unit filename="Scene/RTSceneBuilder.h">
+			<Option virtualFolder="Scene/" />
+		</Unit>
+		<Unit filename="Scene/RTSceneCollisionData.cpp">
 			<Option virtualFolder="Scene/" />
 		</Unit>
 		<Unit filename="Scene/RTSceneCollisionData.h">
 			<Option virtualFolder="Scene/" />
 		</Unit>
+		<Unit filename="Scene/RTSceneGraph.cpp">
+			<Option virtualFolder="Scene/" />
+		</Unit>
 		<Unit filename="Scene/RTSceneGraph.h">
+			<Option virtualFolder="Scene/" />
+		</Unit>
+		<Unit filename="Scene/RTSimpleSceneBuilder.cpp">
+			<Option virtualFolder="Scene/" />
+		</Unit>
+		<Unit filename="Scene/RTSimpleSceneBuilder.h">
+			<Option virtualFolder="Scene/" />
+		</Unit>
+		<Unit filename="Scene/RTSimpleSceneGraph.cpp">
+			<Option virtualFolder="Scene/" />
+		</Unit>
+		<Unit filename="Scene/RTSimpleSceneGraph.h">
+			<Option virtualFolder="Scene/" />
+		</Unit>
+		<Unit filename="Scene/RTStaticRenderTarget.cpp">
+			<Option virtualFolder="Scene/" />
+		</Unit>
+		<Unit filename="Scene/RTStaticRenderTarget.h">
 			<Option virtualFolder="Scene/" />
 		</Unit>
 		<Extensions>

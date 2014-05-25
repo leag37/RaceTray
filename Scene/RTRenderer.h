@@ -8,10 +8,11 @@
 
 #include "Geometry/RTObject.h"
 #include "Math/RTMath.h"
-#include "Scene/RTSceneGraph.h"
+#include "Scene/RTCamera.h"
 #include "Scene/RTLight.h"
 #include "Scene/RTLightPair.h"
-#include "Scene/RTCamera.h"
+#include "Scene/RTSceneGraph.h"
+#include "Scene/RTStaticRenderTarget.h"
 
 namespace RaceTray
 {
@@ -110,6 +111,12 @@ namespace RaceTray
         *   Colorf The final color from the ray
         */
         Colorf traceReflectionRay(const Object* object, const Rayf& ray, const SceneGraph* sceneGraph, const std::vector<Light*>& lights, int recursiveIndex);
+
+    private:
+        /**
+        * The render target for this renderer
+        */
+        RenderTarget* _renderTarget;
 
     };
 

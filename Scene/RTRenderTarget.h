@@ -19,9 +19,42 @@ namespace RaceTray
     class RenderTarget
     {
     public:
-    private:
+        /**
+        * Default constructor
+        */
+        RenderTarget();
 
+        /**
+        * Destructor
+        */
+        virtual ~RenderTarget();
 
+        /**
+        * Initialize the render target
+        * @param
+        *   int The width of the render target
+        * @param
+        *   height The height of the render target
+        * @return
+        *   bool Returns true if the target is successfully created
+        */
+        virtual bool initialize(int width, int height) = 0;
+
+        /**
+        * Destroy the render target
+        */
+        virtual void destroy() = 0;
+
+    protected:
+        /**
+        * The width of the render target
+        */
+        int _width;
+
+        /**
+        * The height of the render target
+        */
+        int _height;
     };
 
     /** @} */

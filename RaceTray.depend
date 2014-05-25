@@ -30,7 +30,7 @@
 
 1400873482 c:\users\gael\documents\racetray\\math\rtmathprerequisites.h
 
-1400873482 c:\users\gael\documents\racetray\\scene\rtscene.h
+1400978617 c:\users\gael\documents\racetray\\scene\rtscene.h
 	<vector>
 	"Math/RTMath.h"
 	"RTRenderer.h"
@@ -41,60 +41,126 @@
 
 1400873482 c:\users\gael\documents\racetray\\math\rtray.inl
 
-1400873482 source:c:\users\gael\documents\racetray\scene\rtscene.cpp
+1400978698 source:c:\users\gael\documents\racetray\scene\rtscene.cpp
+	<iostream>
+	<time.h>
 	"RTScene.h"
+	"Scene/RTSimpleSceneBuilder.h"
+	"Scene/RTSimpleSceneGraph.h"
 
-1400873482 c:\users\gael\documents\racetray\scene\rtscene.h
+1400978617 c:\users\gael\documents\racetray\scene\rtscene.h
 	<vector>
 	"Math/RTMath.h"
 	"RTRenderer.h"
 
-1400905927 c:\users\gael\documents\racetray\\scene\rtrenderer.h
+1400956892 c:\users\gael\documents\racetray\\scene\rtrenderer.h
 	<vector>
 	"Geometry/RTObject.h"
 	"Math/RTMath.h"
-	"Scene/RTSceneGraph.h"
+	"Scene/RTCamera.h"
 	"Scene/RTLight.h"
 	"Scene/RTLightPair.h"
-	"Scene/RTCamera.h"
+	"Scene/RTSceneGraph.h"
+	"Scene/RTStaticRenderTarget.h"
 
-1400906541 c:\users\gael\documents\racetray\\math\rtcolor.h
+1400961128 c:\users\gael\documents\racetray\\math\rtcolor.h
 	"RTMath.h"
 	"RTColor.inl"
 
-1400906115 c:\users\gael\documents\racetray\\math\rtcolor.inl
+1400961040 c:\users\gael\documents\racetray\\math\rtcolor.inl
 
 1400873482 c:\users\gael\documents\racetray\\math\rtvector2.h
 	"RTMath.h"
 
-1400905927 c:\users\gael\documents\racetray\scene\rtrenderer.h
+1400956892 c:\users\gael\documents\racetray\scene\rtrenderer.h
 	<vector>
 	"Geometry/RTObject.h"
 	"Math/RTMath.h"
-	"Scene/RTSceneGraph.h"
+	"Scene/RTCamera.h"
 	"Scene/RTLight.h"
 	"Scene/RTLightPair.h"
-	"Scene/RTCamera.h"
+	"Scene/RTSceneGraph.h"
+	"Scene/RTStaticRenderTarget.h"
 
-1400873482 c:\users\gael\documents\racetray\\scene\rtscenegraph.h
+1400978768 c:\users\gael\documents\racetray\\scene\rtscenegraph.h
 
 1400873482 c:\users\gael\documents\racetray\\scene\rtlight.h
 
-1400886352 c:\users\gael\documents\racetray\\scene\rtcamera.h
+1400968800 c:\users\gael\documents\racetray\\scene\rtcamera.h
 	"Math/RTMath.h"
-	"Scene/RTRenderTarget.h"
 
-1400905913 c:\users\gael\documents\racetray\\geometry\rtobject.h
+1400978147 c:\users\gael\documents\racetray\\geometry\rtobject.h
+	"Effects/RTMaterial.h"
+	"Math/RTMath.h"
+	"Scene/RTSceneCollisionData.h"
 
 1400903413 c:\users\gael\documents\racetray\\scene\rtlightpair.h
 	"Scene/RTLight.h"
 	"Scene/RTSceneCollisionData.h"
 
-1400903403 c:\users\gael\documents\racetray\\scene\rtscenecollisiondata.h
-
-1400875000 c:\users\gael\documents\racetray\\scene\rtrendertarget.h
+1400975213 c:\users\gael\documents\racetray\\scene\rtscenecollisiondata.h
 	"Math/RTMath.h"
 
-1400902842 source:c:\users\gael\documents\racetray\scene\rtrenderer.cpp
+1400960239 c:\users\gael\documents\racetray\\scene\rtrendertarget.h
+	"Math/RTMath.h"
+
+1400958436 source:c:\users\gael\documents\racetray\scene\rtrenderer.cpp
 	"Scene/RTRenderer.h"
+
+1400960250 c:\users\gael\documents\racetray\\scene\rtstaticrendertarget.h
+	"Math/RTMath.h"
+	"Scene/RTRenderTarget.h"
+
+1400959750 source:c:\users\gael\documents\racetray\scene\rtrendertarget.cpp
+	"Scene/RTRenderTarget.h"
+
+1400961176 source:c:\users\gael\documents\racetray\scene\rtstaticrendertarget.cpp
+	"Scene/RTStaticRenderTarget.h"
+
+1400978813 c:\users\gael\documents\racetray\\scene\rtsimplescenegraph.h
+	<vector>
+	"Scene/RTSceneGraph.h"
+
+1400964549 source:c:\users\gael\documents\racetray\scene\rtscenegraph.cpp
+	"Scene/RTSceneGraph.h"
+
+1400978887 source:c:\users\gael\documents\racetray\scene\rtsimplescenegraph.cpp
+	"Geometry/RTObject.h"
+	"Scene/RTSimpleSceneGraph.h"
+
+1400967925 c:\users\gael\documents\racetray\\scene\rtsimplescenebuilder.h
+	"Scene/RTSceneBuilder.h"
+
+1400967748 c:\users\gael\documents\racetray\\scene\rtscenebuilder.h
+
+1400967822 source:c:\users\gael\documents\racetray\scene\rtscenebuilder.cpp
+	"Scene/RTSceneBuilder.h"
+
+1400969185 source:c:\users\gael\documents\racetray\scene\rtcamera.cpp
+	"Scene/RTCamera.h"
+
+1400978201 source:c:\users\gael\documents\racetray\geometry\rtobject.cpp
+	"Geometry/RTObject.h"
+
+1400978517 source:c:\users\gael\documents\racetray\scene\rtsimplescenebuilder.cpp
+	"Effects/RTMaterial.h"
+	"Geometry/RTSphere.h"
+	"Scene/RTCamera.h"
+	"Scene/RTScene.h"
+	"Scene/RTSimpleSceneBuilder.h"
+
+1400974865 c:\users\gael\documents\racetray\\geometry\rtsphere.h
+	"Geometry/RTObject.h"
+
+1400975278 source:c:\users\gael\documents\racetray\geometry\rtsphere.cpp
+	"Geometry/RTSphere.h"
+
+1400975200 source:c:\users\gael\documents\racetray\scene\rtscenecollisiondata.cpp
+	"Scene/RTSceneCollisionData.h"
+
+1400978347 c:\users\gael\documents\racetray\\effects\rtmaterial.h
+	"Math/RTMath.h"
+
+1400978352 source:c:\users\gael\documents\racetray\effects\rtmaterial.cpp
+	"Effects/RTMaterial.h"
 
